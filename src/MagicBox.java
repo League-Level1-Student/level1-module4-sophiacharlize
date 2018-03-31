@@ -5,6 +5,7 @@
 
 
 import java.awt.Dimension;
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -36,8 +37,12 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 		SwingUtilities.invokeLater(new MagicBox());
 	
 		
+		Frame frame = new Frame();
+		mouseClicked(frame);
 		
-	}
+		}
+		
+	
 
 	@Override
 	public void run() {
